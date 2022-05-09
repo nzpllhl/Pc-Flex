@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        background: #eee;
+    }
+    /* 通用选择器 */
+    /* * {
+        border: 1px solid #000;
+    } */
+    
+    .flex {
+        display: flex;
+    }
+    
+    .baiSe {
+        background: white;
+    }
+    /* .yinYing {
+        /* box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, .5); */
+    
+    .Flex1 {
+        flex: 1;
+    }
+    
+    .column {
+        flex-direction: column;
+    }
+    
+    .mg8 {
+        margin: 8px;
+    }
+    
+    .mgr8 {
+        margin-right: 8px;
+    }
+    
+    .mgt8 {
+        margin-top: 8px;
+    }
+    
+    .imgbox {
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #999;
+    }
+    
+    .gundt {
+        /* overflow: scroll; */
+        overflow-x: hidden;
+    }
+    
+    .Navi {
+        /* flex: 1; */
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(129, 123, 123);
+        font-size: 14px;
+        color: #000;
+    }
+    /* 移动端适配媒体查询*/
+    
+    @media(max-width: 600px) {
+        .cebl {
+            display: none;
+        }
+        .neirong {
+            flex-direction: column;
+        }
+        .shorong {
+            flex-direction: column;
+        }
+        .youp {
+            margin-left: 8px;
+        }
+        .shuju {
+            margin: 0 0 8px;
+            flex: auto;
+        }
+    }
+</style>
+
+<body class="flex">
+    <!--侧边栏 -->
+    <div class="baiSe yinYing flex column" style="width: 200px; z-index: 2;">
+        <!-- 头像栏 -->
+        <div class="flex imgbox">
+            <img src="./头像 (女-).png" alt="" style="width: 50px;height: 50px;">
+            <div style="margin-left: 5px;">龙美女</div>
+        </div>
+        <!-- 导航栏 -->
+        <div class="Flex1">
+            <div class="Navi">导航</div>
+            <div class="Navi">导航</div>
+            <div class="Navi">导航</div>
+            <div class="Navi">导航</div>
+            <div class="Navi">导航</div>
+
+        </div>
+    </div>
+    <!-- 主体区域 要占据最大的区域-->
+    <div class="Flex1 flex column">
+        <!-- 头部栏 -->
+        <div style="height: 50px; z-index: 1;" class="baiSe yinYing"></div>
+        <!-- 内容区 -->
+        <div style="overflow: auto;" class="neirong Flex1 flex">
+            <!-- 左区 -->
+            <div style=" flex: 3" class=" flex column mg8">
+                <!-- 数据区 -->
+                <div class="flex shorong">
+                    <div style="height: 100px;" class="shuju Flex1 baiSe mgr8 yinYing"></div>
+                    <div style="height: 100px;" class="shuju Flex1 baiSe mgr8 yinYing"></div>
+                    <div style="height: 100px;" class="shuju Flex1 baiSe mgr8 yinYing"></div>
+                    <div style="height: 100px;" class="shuju Flex1 baiSe yinYing"></div>
+                </div>
+                <!-- 列表区 -->
+                <div class=" flex column">
+                    <!-- 列表项 -->
+                    <div style="height: 100px;" class="baiSe mgt8 yinYing"></div>
+                    <div style="height: 100px;" class="baiSe mgt8 yinYing"></div>
+                    <div style="height: 100px;" class="baiSe mgt8 yinYing"></div>
+                    <div style="height: 100px;" class="baiSe mgt8 yinYing"></div>
+                    <div style="height: 100px;" class="baiSe mgt8 yinYing"></div>
+                    <div style="height: 100px;" class="baiSe mgt8 yinYing"></div>
+                    <div style="height: 100px;" class="baiSe mgt8 yinYing"></div>
+                    <div style="height: 100px;" class="baiSe mgt8 yinYing"></div>
+                    <div style="height: 100px;" class="baiSe mgt8 yinYing"></div>
+                </div>
+            </div>
+            <!-- 右区 -->
+            <div style="flex: 1" class="youp flex column mgr8 mgt8">
+                <!-- 提示区 -->
+                <div class="baiSe yinYing" style="height: 150px;"></div>
+                <!-- 消息区 -->
+                <div class="baiSe mgt8 yinYing" style="height: 300px;"></div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
+<script>
+</script>
